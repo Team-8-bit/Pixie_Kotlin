@@ -11,4 +11,10 @@ object Constants {
         const val I = 0.0
         const val D = 0.0
     }
+
+    object Hood {
+        const val P = 0.0
+        const val I = 0.0
+        const val D = 0.0
+    }
 }

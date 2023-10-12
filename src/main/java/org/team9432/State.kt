@@ -1,10 +1,10 @@
 package org.team9432
 
-enum class State(val shooter: Shooter, val loader: Loader) {
-    IDLE(Shooter.IDLE, Loader.IDLE),
-    LOW_SHOT(Shooter.LOW, Loader.LOAD),
-    MID_SHOT(Shooter.MID, Loader.LOAD),
-    HIGH_SHOT(Shooter.HIGH, Loader.LOAD),
+enum class State(val shooter: Shooter, val loader: Loader, val hood: Hood) {
+    IDLE(Shooter.IDLE, Loader.IDLE, Hood.IDLE),
+    LOW_SHOT(Shooter.LOW, Loader.LOAD, Hood.LOW),
+    MID_SHOT(Shooter.MID, Loader.LOAD, Hood.MID),
+    HIGH_SHOT(Shooter.HIGH, Loader.LOAD, Hood.HIGH),
 
     ;
 
@@ -19,5 +19,12 @@ enum class State(val shooter: Shooter, val loader: Loader) {
         IDLE(0.0),
         LOAD(0.25),
         UNLOAD(-0.25),
+    }
+
+    enum class Hood(val angle: Double) {
+        IDLE(0.0),
+        LOW(0.1),
+        MID(0.2),
+        HIGH(0.3),
     }
 }
