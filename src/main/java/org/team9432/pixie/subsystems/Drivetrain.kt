@@ -3,8 +3,8 @@ package org.team9432.pixie.subsystems
 import com.revrobotics.CANSparkMax.IdleMode
 import edu.wpi.first.wpilibj.drive.DifferentialDrive
 import edu.wpi.first.wpilibj2.command.SubsystemBase
-import org.team9432.Ports.LEFT_DRIVE_ID
-import org.team9432.Ports.RIGHT_DRIVE_ID
+import org.team9432.pixie.Ports.LEFT_DRIVE_ID
+import org.team9432.pixie.Ports.RIGHT_DRIVE_ID
 import org.team9432.lib.drivers.KSparkMAX
 import org.team9432.pixie.Constants.Drivetrain.DEADBAND
 import org.team9432.pixie.Constants.Drivetrain.MAX_OUTPUT

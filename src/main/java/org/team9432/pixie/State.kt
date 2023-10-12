@@ -1,4 +1,4 @@
-package org.team9432
+package org.team9432.pixie
 
 enum class State(val shooter: Shooter, val loader: Loader, val hood: Hood) {
     IDLE(Shooter.IDLE, Loader.IDLE, Hood.IDLE),

@@ -1,7 +1,7 @@
 package org.team9432.pixie.commands
 
 import edu.wpi.first.wpilibj2.command.SequentialCommandGroup
-import org.team9432.State
+import org.team9432.pixie.State
 import org.team9432.pixie.Robot
 import org.team9432.pixie.subsystems.Hood
 import org.team9432.pixie.subsystems.Loader

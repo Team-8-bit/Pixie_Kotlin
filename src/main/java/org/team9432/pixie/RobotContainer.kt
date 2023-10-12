@@ -1,7 +1,6 @@
 package org.team9432.pixie
 
 import edu.wpi.first.wpilibj2.command.button.CommandXboxController
-import org.team9432.State
 import org.team9432.pixie.commands.ResetHood
 import org.team9432.pixie.commands.Shoot
 import org.team9432.pixie.commands.drivetrain.ArcadeDrive

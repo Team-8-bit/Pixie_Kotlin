@@ -6,8 +6,8 @@ import edu.wpi.first.wpilibj.DigitalInput
 import edu.wpi.first.wpilibj2.command.Command
 import edu.wpi.first.wpilibj2.command.FunctionalCommand
 import edu.wpi.first.wpilibj2.command.SubsystemBase
-import org.team9432.Ports.HOOD_ID
-import org.team9432.Ports.HOOD_LIMIT_PORT
+import org.team9432.pixie.Ports.HOOD_ID
+import org.team9432.pixie.Ports.HOOD_LIMIT_PORT
 import org.team9432.lib.drivers.KSparkMAX
 import org.team9432.pixie.Constants.Hood
 import org.team9432.pixie.Constants.Hood.ANGLE_TOLERANCE

@@ -3,7 +3,6 @@ package org.team9432.pixie
 import edu.wpi.first.wpilibj.TimedRobot
 import edu.wpi.first.wpilibj2.command.CommandScheduler
 import edu.wpi.first.wpilibj2.command.InstantCommand
-import org.team9432.State
 
 object Robot: TimedRobot() {
 
