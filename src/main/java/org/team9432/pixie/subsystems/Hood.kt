@@ -3,9 +3,8 @@ package org.team9432.pixie.subsystems
 import edu.wpi.first.math.controller.PIDController
 import edu.wpi.first.wpilibj2.command.Command
 import edu.wpi.first.wpilibj2.command.FunctionalCommand
-import edu.wpi.first.wpilibj2.command.InstantCommand
 import edu.wpi.first.wpilibj2.command.SubsystemBase
-import org.team9432.Ports.SHOOTER_ID
+import org.team9432.Ports.HOOD_ID
 import org.team9432.lib.drivers.KSparkMAX
 import org.team9432.pixie.Constants.Hood
 import org.team9432.pixie.Constants.Hood.ANGLE_TOLERANCE
@@ -13,7 +12,7 @@ import org.team9432.pixie.Robot
 import kotlin.math.abs
 
 object Hood: SubsystemBase() {
-    private val motor = KSparkMAX(SHOOTER_ID)
+    private val motor = KSparkMAX(HOOD_ID)
     private val pid = PIDController(Hood.P, Hood.I, Hood.D)
 
     init {
@@ -38,6 +37,7 @@ object Hood: SubsystemBase() {
             {}, // Execute
             {}, // End
             { atSetpoint() }, // isFinished
-            this)
+            this
+        )
     }
 }
