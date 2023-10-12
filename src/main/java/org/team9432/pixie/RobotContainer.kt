@@ -1,9 +1,9 @@
 package org.team9432.pixie
 
 import edu.wpi.first.wpilibj2.command.button.CommandXboxController
-import org.team9432.pixie.commands.ResetHood
-import org.team9432.pixie.commands.Shoot
 import org.team9432.pixie.commands.drivetrain.ArcadeDrive
+import org.team9432.pixie.commands.resetHood
+import org.team9432.pixie.commands.shoot
 import org.team9432.pixie.subsystems.Drivetrain
 
 object RobotContainer {
@@ -19,10 +19,10 @@ object RobotContainer {
     }
 
     private fun configureBindings() {
-        controller.x().onTrue(Robot.setState(State.HIGH_SHOT).andThen(Shoot()))
-        controller.y().onTrue(Robot.setState(State.MID_SHOT).andThen(Shoot()))
-        controller.a().onTrue(Robot.setState(State.LOW_SHOT).andThen(Shoot()))
+        controller.x().onTrue(Robot.setState(State.HIGH_SHOT).andThen(shoot()))
+        controller.y().onTrue(Robot.setState(State.MID_SHOT).andThen(shoot()))
+        controller.a().onTrue(Robot.setState(State.LOW_SHOT).andThen(shoot()))
 
-        controller.b().onTrue(ResetHood())
+        controller.b().onTrue(resetHood())
     }
 }

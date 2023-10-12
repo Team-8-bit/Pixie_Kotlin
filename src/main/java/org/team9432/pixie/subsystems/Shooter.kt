@@ -27,7 +27,7 @@ object Shooter: SubsystemBase() {
         motor.set(pid.calculate(motor.encoder.velocity))
     }
 
-    fun nextState(): Command {
+    fun next(): Command {
         return FunctionalCommand(
             { setpoint = Robot.state.shooter.rpm }, // Init
             {}, // Execute

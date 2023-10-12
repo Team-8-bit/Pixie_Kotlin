@@ -51,7 +51,7 @@ object Hood: SubsystemBase() {
         }
     }
 
-    fun nextState(): Command {
+    fun next(): Command {
         return FunctionalCommand(
             { setpoint = Robot.state.hood.angle; mode = Mode.PID }, // Init
             {}, // Execute

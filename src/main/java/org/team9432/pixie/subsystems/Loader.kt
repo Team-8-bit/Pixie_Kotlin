@@ -16,7 +16,7 @@ object Loader: SubsystemBase() {
         motor.set(setpoint)
     }
 
-    fun nextState(): Command {
+    fun next(): Command {
         return InstantCommand({ setpoint = Robot.state.loader.speed }, this)
     }
 }
