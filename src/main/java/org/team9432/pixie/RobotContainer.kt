@@ -1,6 +1,5 @@
 package org.team9432.pixie
 
-import edu.wpi.first.wpilibj2.command.Command
 import edu.wpi.first.wpilibj2.command.button.CommandXboxController
 import org.team9432.pixie.commands.drivetrain.ArcadeDrive
 import org.team9432.pixie.subsystems.Drivetrain
@@ -19,10 +18,5 @@ object RobotContainer {
 
     private fun configureBindings() {
 
-    }
-
-    fun getAutonomousCommand(): Command? {
-        // TODO: Implement properly
-        return null
     }
 }
