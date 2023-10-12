@@ -10,11 +10,15 @@ object Constants {
         const val P = 0.0
         const val I = 0.0
         const val D = 0.0
+
+        const val RPM_TOLERANCE = 100
     }
 
     object Hood {
         const val P = 0.0
         const val I = 0.0
         const val D = 0.0
+
+        const val ANGLE_TOLERANCE = 0.1
     }
 }
