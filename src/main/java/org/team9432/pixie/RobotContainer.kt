@@ -1,4 +1,4 @@
-package org.team9432
+package org.team9432.pixie
 
 import edu.wpi.first.wpilibj2.command.Command
 

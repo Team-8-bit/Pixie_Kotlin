@@ -1,5 +1,5 @@
 @file:JvmName("Main") // set the compiled Java class name to "Main" rather than "MainKt"
-package org.team9432
+package org.team9432.pixie
 
 import edu.wpi.first.wpilibj.RobotBase
 
