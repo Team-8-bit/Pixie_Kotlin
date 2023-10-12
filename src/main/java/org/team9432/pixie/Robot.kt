@@ -1,10 +1,12 @@
 package org.team9432.pixie
 
 import edu.wpi.first.wpilibj.TimedRobot
-import edu.wpi.first.wpilibj2.command.Command
 import edu.wpi.first.wpilibj2.command.CommandScheduler
+import org.team9432.State
 
 object Robot: TimedRobot() {
+
+    var state = State.IDLE
 
     override fun robotInit() {
         // Access the RobotContainer object so that it is initialized. This will perform all our

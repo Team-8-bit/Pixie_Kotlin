@@ -6,5 +6,9 @@ object Constants {
         const val DEADBAND = 0.05
     }
 
-
+    object Shooter {
+        const val P = 0.0
+        const val I = 0.0
+        const val D = 0.0
+    }
 }
