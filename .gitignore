@@ -239,7 +239,8 @@ replay_pid*
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
@@ -354,3 +355,4 @@ bin/
 
 # End entries from WPI Lib team
 
+/src/main/java/org/team9432/BuildConstants.java
